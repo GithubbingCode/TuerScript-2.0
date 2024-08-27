@@ -1,0 +1,414 @@
+--[[
+Welcome to the source code.
+Make sure to don't skid anything
+Credits to ThatGodlyBacon
+--]]
+
+function printidentity()
+	print("Current identity is 8")
+end
+
+-- Create a RemoteEvent in ReplicatedStorage named "SendNotification"
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local sendNotificationEvent = Instance.new("RemoteEvent")
+sendNotificationEvent.Name = "SendNotification"
+sendNotificationEvent.Parent = ReplicatedStorage
+
+-- Server-side script
+function createBlackHole()
+    for _, part in pairs(workspace:GetDescendants()) do
+        if part:IsA("BasePart") and not part.Anchored then
+            part.CFrame = CFrame.new(0, 5, 0)
+        end
+    end
+	local message = "Successfully loaded blackhole"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function ctrlclicktp()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Click%20Teleport.txt"))()
+	local message = "Successfully loaded Ctrl + Click TP"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function infinitejump()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()
+	local message = "Successfully loaded infinite jump"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function esp()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+	local message = "Successfully loaded ESP"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function aimbot()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt'))()
+	local message = "Successfully loaded aimbot"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function godmode()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/pupi852/Universal-GodMode-Script/main/Godmode.lua'))()
+	local message = "Successfully loaded godmode"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function noclip()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/LinoTheLoser/Noclip-GUI/main/script'))()
+	local message = "Successfully loaded noclip"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function flashlight()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Human%20Flashlight.txt"))()
+	local message = "Successfully loaded flashlight"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function nolegs()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Remove%20Legs.txt"))()
+	local message = "Successfully loaded no legs"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function float()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Float%20Character.txt"))()
+	local message = "Successfully loaded float"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end 
+
+function highhips()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/High%20Hips.txt"))()
+	local message = "Successfully loaded high hips"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function btools()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+	local message = "Successfully loaded building tools (BTools)"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function night()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Night%20Time%20Toggle.txt"))()
+	local message = "Successfully loaded toggle night"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function limp()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Limp%20Character.txt"))()
+	local message = "Successfully loaded limp"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function blockhead()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Blockhead.txt"))()
+	local message = "Successfully loaded blockhead"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function iy()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	local message = "Successfully loaded infinite yield"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+function unlockparts()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Unlock%20Workspace%20Baseparts.txt"))()
+	local message = "Successfully loaded unlock parts"
+	local player = game:GetService("Players").LocalPlayer
+	player:Notify({
+		Title = "TuerScript";
+		Text = message;
+		Duration = 5;
+	})
+end
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Tabs = Instance.new("Frame")
+local ButtonsTab = Instance.new("TextButton")
+local LuaTab = Instance.new("TextButton")
+local ButtonsFrame = Instance.new("ScrollingFrame")
+local LuaFrame = Instance.new("Frame")
+local SpeedTextBox = Instance.new("TextBox")
+local JumpPowerTextBox = Instance.new("TextBox")
+local SetSpeedButton = Instance.new("TextButton")
+local SetJumpPowerButton = Instance.new("TextButton")
+local LuaTextBox = Instance.new("TextBox")
+local ExecuteButton = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+
+print("WELCOME TO TUERSCRIPT 2.0, credits to: ThatGodlyBacon")
+
+-- Properties
+ScreenGui.Parent = game.CoreGui
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.ResetOnSpawn = false
+
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainFrame.Size = UDim2.new(0, 400, 0, 300)
+MainFrame.Position = UDim2.new(0.5, -200, 0.5, -150)
+MainFrame.Draggable = true
+MainFrame.Active = true
+MainFrame.BorderSizePixel = 0
+
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Title.Size = UDim2.new(1, 0, 0, 50)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "TuerScript 2.0"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 24
+Title.BorderSizePixel = 0
+
+Tabs.Parent = MainFrame
+Tabs.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Tabs.Size = UDim2.new(1, 0, 0, 30)
+Tabs.Position = UDim2.new(0, 0, 0, 50)
+Tabs.BorderSizePixel = 0
+
+ButtonsTab.Parent = Tabs
+ButtonsTab.Size = UDim2.new(0.5, 0, 1, 0)
+ButtonsTab.Font = Enum.Font.Gotham
+ButtonsTab.Text = "Buttons"
+ButtonsTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+ButtonsTab.TextSize = 18
+ButtonsTab.BorderSizePixel = 0
+
+LuaTab.Parent = Tabs
+LuaTab.Size = UDim2.new(0.5, 0, 1, 0)
+LuaTab.Position = UDim2.new(0.5, 0, 0, 0)
+LuaTab.Font = Enum.Font.Gotham
+LuaTab.Text = "Lua"
+LuaTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+LuaTab.TextSize = 18
+LuaTab.BorderSizePixel = 0
+
+ButtonsFrame.Parent = MainFrame
+ButtonsFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ButtonsFrame.Size = UDim2.new(1, 0, 1, -80)
+ButtonsFrame.Position = UDim2.new(0, 0, 0, 80)
+ButtonsFrame.Visible = true
+ButtonsFrame.CanvasSize = UDim2.new(0, 0, 3, 0) -- Adjust the CanvasSize as needed
+ButtonsFrame.ScrollBarThickness = 10
+ButtonsFrame.BorderSizePixel = 0
+
+UIListLayout.Parent = ButtonsFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+LuaFrame.Parent = MainFrame
+LuaFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+LuaFrame.Size = UDim2.new(1, 0, 1, -80)
+LuaFrame.Position = UDim2.new(0, 0, 0, 80)
+LuaFrame.Visible = false
+LuaFrame.BorderSizePixel = 0
+
+-- Add buttons and their functions to ButtonsFrame
+local buttons = {
+    {name = "Ctrl+Click TP", func = function() ctrlclicktp() end},
+    {name = "Infinite Jump", func = function() infinitejump() end},
+    {name = "ESP", func = function() esp() end},
+    {name = "Aimbot", func = function() aimbot() end},
+    {name = "Godmode", func = function() godmode() end},
+    {name = "Noclip", func = function() noclip() end},
+    {name = "Flashlight", func = function() flashlight() end},
+    {name = "No Legs", func = function() nolegs() end},
+    {name = "Float", func = function() float() end},
+    {name = "High Hips", func = function() highhips() end},
+    {name = "BTools", func = function() btools() end},
+    {name = "Toggle Night", func = function() night() end},
+    {name = "Limp", func = function() limp() end},
+    {name = "Blockhead", func = function() blockhead() end},
+    {name = "Infinite Yield", func = function() iy() end},
+    {name = "Unlock Parts", func = function() unlockparts() end},
+    {name = "Blackhole", func = function() createBlackHole() end},
+}
+
+for i, button in ipairs(buttons) do
+    local btn = Instance.new("TextButton")
+    btn.Parent = ButtonsFrame
+    btn.Size = UDim2.new(1, -20, 0, 30)
+    btn.Font = Enum.Font.Gotham
+    btn.Text = button.name
+    btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+    btn.TextSize = 18
+    btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+    btn.BorderSizePixel = 0
+    btn.MouseButton1Click:Connect(button.func)
+end
+
+-- Add text fields and buttons for speed and jump power
+SpeedTextBox.Parent = ButtonsFrame
+SpeedTextBox.Size = UDim2.new(1, -20, 0, 30)
+SpeedTextBox.Font = Enum.Font.Gotham
+SpeedTextBox.PlaceholderText = "Enter Speed"
+SpeedTextBox.Text = ""
+SpeedTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedTextBox.TextSize = 18
+SpeedTextBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SpeedTextBox.BorderSizePixel = 0
+
+JumpPowerTextBox.Parent = ButtonsFrame
+JumpPowerTextBox.Size = UDim2.new(1, -20, 0, 30)
+JumpPowerTextBox.Font = Enum.Font.Gotham
+JumpPowerTextBox.PlaceholderText = "Enter Jump Power"
+JumpPowerTextBox.Text = ""
+JumpPowerTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerTextBox.TextSize = 18
+JumpPowerTextBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+JumpPowerTextBox.BorderSizePixel = 0
+
+SetSpeedButton.Parent = ButtonsFrame
+SetSpeedButton.Size = UDim2.new(1, -20, 0, 30)
+SetSpeedButton.Font = Enum.Font.Gotham
+SetSpeedButton.Text = "Set Speed"
+SetSpeedButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetSpeedButton.TextSize = 18
+SetSpeedButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SetSpeedButton.BorderSizePixel = 0
+SetSpeedButton.MouseButton1Click:Connect(function()
+	local player = game:GetService("Players").LocalPlayer
+	player.Character.Humanoid.WalkSpeed = SpeedTextBox.Text
+end)
+
+SetJumpPowerButton.Parent = ButtonsFrame
+SetJumpPowerButton.Size = UDim2.new(1, -20, 0, 30)
+SetJumpPowerButton.Font = Enum.Font.Gotham
+SetJumpPowerButton.Text = "Set Jump Power"
+SetJumpPowerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetJumpPowerButton.TextSize = 18
+SetJumpPowerButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SetJumpPowerButton.BorderSizePixel = 0
+SetJumpPowerButton.MouseButton1Click:Connect(function()
+	local player = game:GetService("Players").LocalPlayer
+	player.Character.Humanoid.JumpPower = JumpPowerTextBox.Text
+end)
+
+-- Lua tab
+LuaTextBox.Parent = LuaFrame
+LuaTextBox.Size = UDim2.new(1, -20, 0, 200)
+LuaTextBox.Position = UDim2.new(0, 10, 0, 10)
+LuaTextBox.Font = Enum.Font.Gotham
+LuaTextBox.PlaceholderText = "Your script here please"
+LuaTextBox.Text = ""
+LuaTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+LuaTextBox.TextSize = 18
+LuaTextBox.TextWrapped = true
+LuaTextBox.MultiLine = true
+LuaTextBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LuaTextBox.BorderSizePixel = 0
+
+ExecuteButton.Parent = LuaFrame
+ExecuteButton.Size = UDim2.new(1, -20, 0, 30)
+ExecuteButton.Position = UDim2.new(0, 10, 0, 220)
+ExecuteButton.Font = Enum.Font.Gotham
+ExecuteButton.Text = "Execute"
+ExecuteButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButton.TextSize = 18
+ExecuteButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ExecuteButton.BorderSizePixel = 0
+ExecuteButton.MouseButton1Click:Connect(function()
+    local luaCode = LuaTextBox.Text
+    if luaCode and luaCode ~= "" then
+        loadstring(luaCode)()
+    else
+        print("No Lua code entered")
+    end
+end)
+
+-- Tab switching functionality
+ButtonsTab.MouseButton1Click:Connect(function()
+    ButtonsFrame.Visible = true
+    LuaFrame.Visible = false
+end)
+
+LuaTab.MouseButton1Click:Connect(function()
+    ButtonsFrame.Visible = false
+    LuaFrame.Visible = true
+end)
